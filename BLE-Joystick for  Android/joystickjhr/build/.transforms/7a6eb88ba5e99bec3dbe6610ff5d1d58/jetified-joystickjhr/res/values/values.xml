@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">JoystickJhr</string>
+    <declare-styleable name="CustomJoystickStyle">
+            <attr format="boolean" name="displayShapeName"/>
+            <attr format="string" name="textCustom"/>
+            <attr format="color" name="colorFirst"/>
+            <attr format="color" name="colorSecond"/>
+            <attr format="float" name="radioCircle"/>
+            <attr format="integer" name="alphaCircleFirst"/>
+            <attr format="integer" name="alphaCircleSecond"/>
+            <attr format="string" name="textJoy"/>
+            <attr format="float" name="xtextOffset"/>
+            <attr format="float" name="ytextOffset"/>
+            <attr format="float" name="textSizeJoy"/>
+            <attr format="boolean" name="relleno"/>
+            <attr format="float" name="rellenoSize"/>
+            <attr format="color" name="colorText"/>
+            <attr format="enum" name="labelPosition">
+                <enum name="left" value="0"/>
+                <enum name="right" value="1"/>
+            </attr>
+        </declare-styleable>
+</resources>

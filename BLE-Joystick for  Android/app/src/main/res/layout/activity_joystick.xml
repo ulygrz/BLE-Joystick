@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Joystick_GattServer">
+
+
+
+    <com.example.joystickjhr.JoystickJhr
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        app:alphaCircleFirst="200"
+        app:alphaCircleSecond="200"
+        app:colorFirst="#2979FF"
+        app:colorSecond="#2979FF"
+        app:radioCircle="0.5"
+        app:textJoy=""
+        app:textSizeJoy="48"
+        app:xtextOffset="-38"
+        app:ytextOffset="-15"
+        app:relleno="true"
+        app:rellenoSize="12"
+        android:id="@+id/joystickJhr">
+
+    </com.example.joystickjhr.JoystickJhr>
+
+    <TextView
+        android:id="@+id/xjoystick"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginTop="30dp"
+        android:text="Position X:"
+        android:layout_gravity="center_horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/joystickJhr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.959" />
+
+    <TextView
+        android:id="@+id/yjoystick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Position Y:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/xjoystick"
+        android:layout_gravity="center_horizontal"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/anglejoystick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Angle:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yjoystick"
+        android:layout_gravity="center_horizontal"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/xtemi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Temi X:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/anglejoystick"
+        android:layout_gravity="center_horizontal"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/ytemi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Temi Y:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/xtemi"
+        android:layout_gravity="center_horizontal"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/angletemi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Temi Angle:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ytemi"
+        android:layout_gravity="center_horizontal"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/msgfortemi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="x: - y: "
+        android:layout_gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Button
+        android:id="@+id/stop_connection"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Stop Connection" />
+
+
+</LinearLayout>

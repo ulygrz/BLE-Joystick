@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: artifacts:joystickjhr:unspecified">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/joystickjhr/build/.transforms/691ffdfb5a425a4143bdc7dd851ba933/jetified-joystickjhr/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/joystickjhr/build/.transforms/691ffdfb5a425a4143bdc7dd851ba933/jetified-joystickjhr/res" />
+      <root url="file://$PROJECT_DIR$/joystickjhr/build/.transforms/691ffdfb5a425a4143bdc7dd851ba933/jetified-joystickjhr/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

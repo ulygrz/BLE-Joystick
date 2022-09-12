@@ -1,0 +1,4 @@
+include ':joystickjhr'
+include ':joystickjhr'
+include ':app'
+rootProject.name = "Joystick BLE"
