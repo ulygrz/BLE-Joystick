@@ -44,13 +44,13 @@ The method connectionStateChangedUnsuccessfull() checks if the connection was in
 For more information follow [this](https://medium.com/@martijn.van.welie/making-android-ble-work-part-2-47a3cdaade07) guide.
 
 ## Description of the Structure, Patterns and Division of the Code
-![BLE-Joystick-TemiApp](images/BLE-Joystick_AndroidApp_structure.jpg)
+![BLE-Joystick-TemiApp](Images/BLE_Joystick_AndroidApp_structure.jpg)
 The app for TemiOS consists of two classes SelectDeviceActivity and TemiMovement_BLE_Client 
 SelectDeviceActivity. SelectDeviceActivity scans for the compatible app with the UUID: 0000FED8-0000-1000-8000-00805F9B34F and it shows the compatible devices in a list. When a device is selected, it sends the device’sinformation to the class TemiMovement_BLE_Client to connect with it and search for Services. 
 
 TemiMovment_BLE_Client looks for the Joystick Service with the UUID: 00001111-0000-1000-8000-00805F9B34FB. The Service includes the characteristic with the UUID: 00002222-0000-1000-8000-00805F9B34FB.
 
-![BLE-Joystick-AndroidApp](images/BLE-Joystick_AndroidApp_structure.jpg)
+![BLE-Joystick-AndroidApp](Images/BLE_Joystick_AndroidApp_structure.jpg)
 
 The app for android contains two clases BluetoothadapterCheck and Joystick_GattServer. 
 BluetoothadapterCheck checks if the Bluetooth-Module can advertise. If so, then it calls Joystick_GattServer. This class setup the server and starts the advertising and wait for a callback to confirm the connection in onConnectionStateChange(). Then the joystick can be used and the data will be sent with the method changeCharacteristicServer(). 
