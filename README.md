@@ -6,9 +6,10 @@ Bluetooth Low Energy Joystick for the robot Temi. The app connects a virtual Joy
 	- [Installing BLE-Joystick](https://github.com/ulygrz/BLE-Joystick#uninstalling-ble-joystick)
 	- [Uninstalling BLE-Joystick](https://github.com/ulygrz/BLE-Joystick#uninstalling-ble-Joystick)
 - [Important Functions and Parameters](https://github.com/ulygrz/BLE-Joystick#important-functions-and-parameters)
-	- []
+	- [Joystick data management ](https://github.com/ulygrz/BLE-Joystick#joystick-data-management)
 	- [Structure, Patterns and Division of the Code](https://github.com/ulygrz/BLE-Joystick#structure-patterns-and-division-of-the-code)
 - [Lookout](https://github.com/ulygrz/BLE-Joystick#lookout)
+
 
 # **Installation Guide**
 The first step is to install ADB on your computer. Follow [this](https://www.xda-developers.com/install-adb-windows-macos-linux) tutorial on how to download and set up ADB on your computer.
@@ -47,7 +48,7 @@ abd uninstall [option] PACKAGE_NAME
 
 BLE-Joystick consist in two apps, an app for an android device and an app fot TemiOS 
 
-## To perform changes
+## Joystick data management
 The Temi app receives the values to control the robot from the Joystick app in the android device. The received data is a byte-Array. The values from the joystick will be separated in the method directionValue() and passed to xSkidJoy and ySkidJoy for the method skidJoy() of the class Robot. It is called in the method taskMaster(). For good driving behavior, it is recommended to leave a buffer of at least 500 ms between each command. To drive forward, the command robot.skidJoy(1,0) is used. To turn left, call the same function with the following input values: robot.skidJoy(0,1). If the values of the x and y axes are zero, the method stopMovement() is called and all the movements are stopped.
 The method connectionStateChangedUnsuccessfull() checks if the connection was interrupted and disconnects the device completely, also it checks if the status of the connection is 133 to remove the device, this status means there was a connection problem and stops a reconnection. A status 133 is very common when trying to connect a device and it can have many causes.
 For more information follow [this](https://medium.com/@martijn.van.welie/making-android-ble-work-part-2-47a3cdaade07) guide.
