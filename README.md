@@ -74,3 +74,31 @@ The apps can maintain a stable connection, exchange and receive data as well as 
 ### _Open Issues:_
 
 The application sometimes has difficulties to connect and still shows status 133. 
+
+# The BLE-Joystick App
+The App has two versions. The App for TemiOS and an app for AndroidOS
+
+## The Android App
+### Advertise for Temi App
+To establish a connection, the android version has to initiate the advertising to be found by the Temi app. To do this press the button “Find Temi”.
+
+![BLE-Joystick_Android_App_Starting_Tab](Images/AndroidApp_starting_tab.jpg)
+
+### Joystick View
+As soon as the connection was successfully established the virtual joystick appears and is ready to start sending the information.
+To stop the connection with the Temi just press the button “Stop Connection”. The app will go back to the advertise Activity.
+The joystick sends values to the TemiOS App.
+
+![BLE-Joystick_Android_App_Joystick_Tab](Images/AndroidApp_Joystick_tab.jpg)
+
+## The TemiOs App
+### Finding the Android App
+Meanwhile in the TemiOS version to find the joystick app click on the button “Find Joystick”. The devices which have the application and are doing advertising are displayed below as a list.
+To select the desired devise press on the item of the list with the devise’s name. It will start the connection automatically, when the connection was successfully built it will show the next activity.
+
+![BLE-Joystick_TemiApp_Starting_Tab](Images/TemiApp_starting_tab.jpg)
+
+### Stop the Connection
+To finish the connection with the joystick app, click on the button shown below “Stop Connection”. It will stop the robot, close the connection with the android device and return to the previous activity.
+
+![BLE-Joystick_TemiApp_StopConnection_Tab](Images/TemiApp_StopConnection_tab.jpg)
