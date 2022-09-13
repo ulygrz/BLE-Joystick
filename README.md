@@ -9,6 +9,13 @@ Bluetooth Low Energy Joystick for the robot Temi. The app connects a virtual Joy
 	- [Joystick data management ](https://github.com/ulygrz/BLE-Joystick#joystick-data-management)
 	- [Structure, Patterns and Division of the Code](https://github.com/ulygrz/BLE-Joystick#structure-patterns-and-division-of-the-code)
 - [Lookout](https://github.com/ulygrz/BLE-Joystick#lookout)
+- [The BLE-Joystick App](https://github.com/ulygrz/BLE-Joystick#the-ble-joystick-app)
+	- [The Android App](https://github.com/ulygrz/BLE-Joystick#the-android-app)
+		- [Advertise for Temi App](https://github.com/ulygrz/BLE-Joystick#advertise-for-temi-app)
+		- [Joystick View](https://github.com/ulygrz/BLE-Joystick#joystick-view)
+	- [The TemiOS App](https://github.com/ulygrz/BLE-Joystick#the-temios-app)
+		- [Find the Android App](https://github.com/ulygrz/BLE-Joystick#find-the-android-app)
+		- [Stop the Connection](https://github.com/ulygrz/BLE-Joystick#stop-the-connection)
 
 
 # **Installation Guide**
@@ -76,7 +83,7 @@ The apps can maintain a stable connection, exchange and receive data as well as 
 The application sometimes has difficulties to connect and still shows status 133. 
 
 # The BLE-Joystick App
-The App has two versions. The App for TemiOS and an app for AndroidOS
+BLE-Joystick has two versions. The app for TemiOS and an app for AndroidOS
 
 ## The Android App
 ### Advertise for Temi App
@@ -92,7 +99,7 @@ The joystick sends values to the TemiOS App.
 ![BLE-Joystick_Android_App_Joystick_Tab](Images/AndroidApp_Joystick_tab.jpg)
 
 ## The TemiOs App
-### Finding the Android App
+### Find the Android App
 Meanwhile in the TemiOS version to find the joystick app click on the button “Find Joystick”. The devices which have the application and are doing advertising are displayed below as a list.
 To select the desired devise press on the item of the list with the devise’s name. It will start the connection automatically, when the connection was successfully built it will show the next activity.
 
