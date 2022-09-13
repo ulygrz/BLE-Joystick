@@ -1,6 +1,15 @@
 # BLE-Joystick
 Bluetooth Low Energy Joystick for the robot Temi. The app connects a virtual Joystick via Bluetooth Low Energy with the robot Temi and let the user to navigate it. 
 
+- [Installation Guide](https://github.com/ulygrz/BLE-Joystick/edit/main/README.md#installation-guide)
+	- [Connect Computer to Robot Temi](https://github.com/ulygrz/BLE-Joystick#connect-computer-to-robot)
+	- [Install BLE-Joystick]()
+	- Uninstalling BLE-Joystick
+- [Important Functions and Parameters]
+	- []
+- [Structure, Patterns and Division of the Code]
+- [Lookout]
+
 # **Installation Guide**
 The first step is to install ADB on your computer. Follow [this](https://www.xda-developers.com/install-adb-windows-macos-linux) tutorial on how to download and set up ADB on your computer.
 If you are using Android Studio is most likely that it is already installed.
@@ -15,7 +24,7 @@ Once you have ADB set up on your computer, you can run your code on temi by:
 adb connect <IP_ADDRESS>:5555
 ```
 
-# Installing Applications
+# Installing BLE-Joystick
 Once you have established a connection between your computer and temi, you can install your app using two methods:
 
 **1.** Directly through Android Studio by selecting the "rockchip rk****" and selecting Run.
@@ -25,7 +34,7 @@ Once you have established a connection between your computer and temi, you can i
 adb install [option] PATH_OF_APK
 ```
 
-# Uninstalling Applications
+# Uninstalling BLE-Joystick
 Once you have established a connection between your computer and temi, you can uninstall your app on temi by typing following command in the terminal:
 
 ```sh
@@ -43,7 +52,7 @@ The Temi app receives the values to control the robot from the Joystick app in t
 The method connectionStateChangedUnsuccessfull() checks if the connection was interrupted and disconnects the device completely, also it checks if the status of the connection is 133 to remove the device, this status means there was a connection problem and stops a reconnection. A status 133 is very common when trying to connect a device and it can have many causes.
 For more information follow [this](https://medium.com/@martijn.van.welie/making-android-ble-work-part-2-47a3cdaade07) guide.
 
-## Description of the Structure, Patterns and Division of the Code
+## Structure, Patterns and Division of the Code
 ![BLE-Joystick-TemiApp](Images/BLE_Joystick_AndroidApp_structure.jpg)
 The app for TemiOS consists of two classes SelectDeviceActivity and TemiMovement_BLE_Client 
 SelectDeviceActivity. SelectDeviceActivity scans for the compatible app with the UUID: 0000FED8-0000-1000-8000-00805F9B34F and it shows the compatible devices in a list. When a device is selected, it sends the device’sinformation to the class TemiMovement_BLE_Client to connect with it and search for Services. 
