@@ -5,10 +5,10 @@ Bluetooth Low Energy Joystick for the robot Temi. The app connects a virtual Joy
 	- [Connect Computer to Robot Temi](https://github.com/ulygrz/BLE-Joystick#connect-computer-to-robot)
 	- [Installing BLE-Joystick](https://github.com/ulygrz/BLE-Joystick#uninstalling-ble-joystick)
 	- [Uninstalling BLE-Joystick](https://github.com/ulygrz/BLE-Joystick#uninstalling-ble-Joystick)
-- [Important Functions and Parameters](https://github.com/ulygrz/BLE-Joystick#important-funtions-and-parameters)
+- [Important Functions and Parameters](https://github.com/ulygrz/BLE-Joystick#important-functions-and-parameters)
 	- []
-- [Structure, Patterns and Division of the Code](https://github.com/ulygrz/BLE-Joystick#structure,-paterns-and-division-of-the-code)
-- [Lookout](ttps://github.com/ulygrz/BLE-Joystick#lookout)
+	- [Structure, Patterns and Division of the Code](https://github.com/ulygrz/BLE-Joystick#structure-patterns-and-division-of-the-code)
+- [Lookout](https://github.com/ulygrz/BLE-Joystick#lookout)
 
 # **Installation Guide**
 The first step is to install ADB on your computer. Follow [this](https://www.xda-developers.com/install-adb-windows-macos-linux) tutorial on how to download and set up ADB on your computer.
